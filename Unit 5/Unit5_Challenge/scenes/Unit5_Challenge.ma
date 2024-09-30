@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Unit5_Challenge.ma
-//Last modified: Sat, Sep 28, 2024 01:24:51 AM
+//Last modified: Sat, Sep 28, 2024 01:31:26 AM
 //Codeset: 932
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -14,18 +14,18 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "4DFC92F4-46B6-894E-FDE3-03AF4811B256";
+fileInfo "UUID" "2DFC1794-4C51-F94F-0860-86B9F2845893";
 createNode transform -s -n "persp";
 	rename -uid "F575B87B-4E46-3290-9B27-0A997F9CF154";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 5.5125453507520792 7.2904962705080072 -3.5962204848957557 ;
-	setAttr ".r" -type "double3" -395.39999995825673 2292.3999999997413 0 ;
+	setAttr ".t" -type "double3" 9.1838153272033143 6.977400154121705 -12.411604703380085 ;
+	setAttr ".r" -type "double3" -376.7999999582488 2306.3999999997081 0 ;
 	setAttr ".rpt" -type "double3" -1.9445665333564861e-16 -5.3428967670337267e-16 3.3348954975026973e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "92427633-48A6-944B-07C7-C787781D32D7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 9.2317731562245839;
+	setAttr ".coi" 17.419177821427706;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -17340,7 +17340,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[28].y" -451.42855834960938;
 	setAttr ".tgi[0].ni[28].nvs" 1923;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "5DD7B391-419B-01BB-126B-8E81C542370C";
+	rename -uid "67FAA4C1-4C33-A27A-58BE-D1B513484094";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
