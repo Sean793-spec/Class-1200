@@ -1,24 +1,23 @@
 //Maya ASCII 2024 scene
-//Name: Unit6_Lab.ma
-//Last modified: Sun, Oct 06, 2024 09:11:55 PM
+//Name: Unit6_Challenge.ma
+//Last modified: Sun, Oct 06, 2024 09:12:09 PM
 //Codeset: 932
 requires maya "2024";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
 requires -nodeType "mayaUsdLayerManager" -dataType "pxrUsdStageData" "mayaUsdPlugin" "0.25.0";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "CD1C90B8-4C69-712C-AC45-97A56B4F0530";
+fileInfo "UUID" "8589C371-46EF-6794-43A0-EA9E7A460D40";
 createNode transform -s -n "persp";
 	rename -uid "8B7749FA-4955-E80D-D7FC-EAB81594E83D";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 7.1432565496329188 5.5761778078287705 8.0666047807372241 ;
-	setAttr ".r" -type "double3" -21.93835273830501 42.999999996017557 2.1744298786044433e-15 ;
+	setAttr ".r" -type "double3" -21.93835273830501 42.999999996017564 2.1744298786044433e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C6386128-43E9-A151-3158-62BFB3DA1ED7";
 	setAttr -k off ".v" no;
@@ -11113,20 +11112,20 @@ createNode mesh -n "treebranceproto_Shape2" -p "treebranceproto_2";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "1C30A3AD-4115-01A4-2E9F-57BDF07DF4B9";
+	rename -uid "3344A43A-438D-C971-0BA9-52BF84EB8CD6";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "B867D45E-442E-98CD-817E-F1A1E098FF69";
+	rename -uid "F658750B-4093-6024-C3AC-0897A69589DC";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "43F40792-4A22-DA61-F1BD-338EE9AC9F05";
+	rename -uid "98C0F85C-40EB-527D-8E65-C8B2A669E17E";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "05D935B7-4138-CF27-BF84-A79A31C50A79";
+	rename -uid "E0D2C6E6-4DE8-0002-C5BD-2A97A854333B";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "50E61842-460B-DBFD-6A93-2AB4E6D01653";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "1B56E939-4C66-912F-0D2B-32A479BF89C0";
+	rename -uid "37790862-43B0-7036-EA54-8BA26BFD618A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "DA96BC9A-477B-3167-8130-D593DA946391";
 	setAttr ".g" yes;
@@ -11204,7 +11203,7 @@ createNode groupId -n "groupId8";
 	rename -uid "4A8956D7-4435-0B5B-F3A2-6D9D95AD5566";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "2432CDB9-4BA1-0AB6-C94C-FBBD2AF1D3DD";
+	rename -uid "2EEB81EB-45A7-09F8-4CAA-87BF98DEF479";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -11306,4 +11305,4 @@ connectAttr "Gravestone_3Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId6.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId7.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId8.msg" ":initialShadingGroup.gn" -na;
-// End of Unit6_Lab.ma
+// End of Unit6_Challenge.ma
