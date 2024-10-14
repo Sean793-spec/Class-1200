@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: Unit7_Lab.ma
-//Last modified: Mon, Oct 14, 2024 01:32:53 AM
+//Name: Unit7_Challenge.ma
+//Last modified: Mon, Oct 14, 2024 01:33:10 AM
 //Codeset: 932
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "4817363D-4DD1-8485-CCAB-E9AC79174A47";
+fileInfo "UUID" "A2EF8E6B-4734-60F7-C15A-5592CD946044";
 createNode transform -s -n "persp";
 	rename -uid "8B7749FA-4955-E80D-D7FC-EAB81594E83D";
 	setAttr ".v" no;
@@ -13374,7 +13374,7 @@ createNode groupParts -n "groupParts37";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[201]";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "BD882567-4BFE-74BF-23DF-50A185003ADB";
+	rename -uid "F9C9AACB-4A27-4417-5D99-61AC0B17E7DE";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -13569,4 +13569,4 @@ connectAttr "groupId7.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId8.msg" ":initialShadingGroup.gn" -na;
 connectAttr "Tree_BaseShapeHiddenFacesSet.msg" ":defaultHideFaceDataSet.dnsm" -na
 		;
-// End of Unit7_Lab.ma
+// End of Unit7_Challenge.ma
