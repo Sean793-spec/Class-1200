@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Unit8_Lab.ma
-//Last modified: Fri, Oct 25, 2024 11:46:12 PM
+//Last modified: Fri, Oct 25, 2024 11:48:44 PM
 //Codeset: 932
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -14,17 +14,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "9EE66FA8-4441-048C-BA8A-3BB7D9C1DA69";
+fileInfo "UUID" "661113DE-45D0-5B33-073D-F58DE4255EB0";
 createNode transform -s -n "persp";
 	rename -uid "8B7749FA-4955-E80D-D7FC-EAB81594E83D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 11.322230571548836 4.1194007922354681 4.1889803577679343 ;
-	setAttr ".r" -type "double3" -12.938352766015718 -633.80000000016491 0 ;
+	setAttr ".t" -type "double3" 5.477238357111843 4.8487828312807002 2.4169097390755061 ;
+	setAttr ".r" -type "double3" -27.338352766012939 -656.60000000013383 3.5516361005652557e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C6386128-43E9-A151-3158-62BFB3DA1ED7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 11.229179064288836;
+	setAttr ".coi" 5.9512127905726189;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -14324,6 +14324,7 @@ createNode transform -n "Tree_Detailed1";
 	setAttr ".sp" -type "double3" 6.7591032593483087 0.60537318823360076 -0.0086543260257200827 ;
 createNode transform -n "Tree" -p "Tree_Detailed1";
 	rename -uid "6BEB1311-44AB-67E4-8809-54AF3BA66EA9";
+	setAttr ".t" -type "double3" -0.40807384091606624 0 0 ;
 	setAttr ".rp" -type "double3" -1.1919164135542579 1.365367800697054 -0.47646724542170377 ;
 	setAttr ".sp" -type "double3" -1.1919164135542579 1.365367800697054 -0.47646724542170377 ;
 createNode mesh -n "TreeShape" -p "|Tree_Detailed1|Tree";
@@ -16982,7 +16983,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[15].y" 292.85714721679688;
 	setAttr ".tgi[0].ni[15].nvs" 2066;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "3A81EA77-461A-5B5A-2E0D-109211BFB845";
+	rename -uid "3E023983-492A-5109-6D1B-D69BCFBE6397";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
