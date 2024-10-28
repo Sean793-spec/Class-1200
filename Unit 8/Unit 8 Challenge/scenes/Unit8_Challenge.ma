@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Unit8_Challenge.ma
-//Last modified: Mon, Oct 28, 2024 12:30:32 AM
+//Last modified: Mon, Oct 28, 2024 12:45:28 AM
 //Codeset: 932
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -15,17 +15,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "5611EC9E-426A-E8E8-5BC3-7BAE6603C7FB";
+fileInfo "UUID" "27BCB1EB-4754-420F-B533-6DA287DBE6EB";
 createNode transform -s -n "persp";
 	rename -uid "8B7749FA-4955-E80D-D7FC-EAB81594E83D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 20.309130712633252 14.460614864812282 2.5461903056619692 ;
-	setAttr ".r" -type "double3" -41.738352766101961 -637.39999999991051 0 ;
+	setAttr ".t" -type "double3" 12.750277781050595 8.4361421572777076 3.1324165185065178 ;
+	setAttr ".r" -type "double3" -35.138352766113456 -631.79999999988809 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C6386128-43E9-A151-3158-62BFB3DA1ED7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 19.60686502969024;
+	setAttr ".coi" 12.840437080853311;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -16603,10 +16603,10 @@ createNode materialInfo -n "materialInfo6";
 createNode renderSetup -n "renderSetup";
 	rename -uid "C4B446E1-4789-C2AC-9A25-298010F48D2A";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "E0F779C4-4383-4334-AED5-219C2DAB2DDE";
+	rename -uid "52C9A654-4B3E-F03C-4A9C-B893D7959B13";
 	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "13941F19-4A5B-76F2-EA23-D6B44D7FCD1A";
+	rename -uid "A9919F3B-46F3-97EE-A9B6-A59C07C3F761";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -983.80786379582889 -1055.9523389926051 ;
 	setAttr ".tgi[0].vh" -type "double2" 1088.5697643948695 285.7142743610205 ;
