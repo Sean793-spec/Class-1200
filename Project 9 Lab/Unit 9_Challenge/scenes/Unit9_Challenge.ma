@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: Unit9_Lab-SO.ma
-//Last modified: Sun, Nov 03, 2024 09:52:53 PM
+//Name: Unit9_Challenge.ma
+//Last modified: Sun, Nov 03, 2024 09:53:51 PM
 //Codeset: 932
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -15,7 +15,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "BCC28CF7-4F74-D2CA-B117-7B80A7AAFEB2";
+fileInfo "UUID" "8575BDB0-4002-631F-998D-E6845ECBBAB6";
 createNode transform -s -n "persp";
 	rename -uid "8B7749FA-4955-E80D-D7FC-EAB81594E83D";
 	setAttr ".v" no;
@@ -11788,6 +11788,7 @@ createNode transform -n "Crypt_Base" -p "Crypt_Detailed";
 createNode mesh -n "Crypt_BaseShape" -p "|Crypt_Detailed|Crypt_Base";
 	rename -uid "07085190-4D32-295E-C639-AEA17B705C1B";
 	setAttr -k off ".v";
+	setAttr ".iog[0].og[2].gcl" -type "componentList" 1 "f[0:70]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr -s 6 ".gtag";
@@ -16699,8 +16700,11 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[17].x" -114.28571319580078;
 	setAttr ".tgi[0].ni[17].y" 258.57144165039062;
 	setAttr ".tgi[0].ni[17].nvs" 2066;
+createNode groupId -n "groupId10";
+	rename -uid "28349DEB-499E-8EFE-4F98-3DADDE8C2E49";
+	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "5EDD11CD-444C-C578-098B-DABD15B638C7";
+	rename -uid "B8CB913C-403F-053F-4F66-0E9E65F7376C";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -16754,12 +16758,18 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
+select -ne :modelPanel4ViewSelectedSet;
+	setAttr ".ihi" 0;
 connectAttr "groupId7.id" "Gravestone_5Shape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "Gravestone_5Shape.iog.og[0].gco";
 connectAttr "groupId6.id" "Gravestone_4Shape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "Gravestone_4Shape.iog.og[0].gco";
 connectAttr "groupId8.id" "Gravestone_3Shape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "Gravestone_3Shape.iog.og[0].gco";
+connectAttr "groupId10.id" "|Crypt_Detailed|Crypt_Base|Crypt_BaseShape.iog.og[2].gid"
+		;
+connectAttr ":modelPanel4ViewSelectedSet.mwc" "|Crypt_Detailed|Crypt_Base|Crypt_BaseShape.iog.og[2].gco"
+		;
 connectAttr "groupId9.id" "|Tree_Detailed|Tree|TreeShape.iog.og[0].gid";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
@@ -16934,4 +16944,4 @@ connectAttr "pointLight2.iog" ":defaultLightSet.dsm" -na;
 connectAttr "directionalLight8.iog" ":defaultLightSet.dsm" -na;
 connectAttr "directionalLight7.iog" ":defaultLightSet.dsm" -na;
 connectAttr "directionalLight9.iog" ":defaultLightSet.dsm" -na;
-// End of Unit9_Lab-SO.ma
+// End of Unit9_Challenge.ma
